@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, .outer-wrapper {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    background-color: #2F3337;
+    color: whitesmoke;
+}
+
+.result-display {
+    position: absolute;
+    top: 8vh;
+}
+
+.outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    /* disable image hold on mobile */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+table {
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+td {
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    font-size: min(4.5vh, 7.5vw);
+    text-shadow: 0 0 .3em #00000066;
+}
+
+tbody>:nth-child(1)>td, tbody>:nth-child(2)>td {
+    border-bottom: .1em solid whitesmoke;
+}
+
+tr :nth-child(1), tr :nth-child(2) {
+    border-right: .1em solid whitesmoke;
+}
+
+.reset-button {
+    font-size: 1em;
+    padding: 0.35em 0.4em;
+    background-color: transparent;
+    border: 0.05em solid whitesmoke;
+    border-radius: .3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    box-shadow: 0 0 .2em #00000088;
+}
+
+.reset-button:active {
+    transform: scale(.97);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.3em;
+}
+
+.win-wrap {
+    position: absolute;
+    font-size: min(4.5vh, 8vw);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2em;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    bottom: 8vh;
+    text-shadow: 0 0 .3em #00000066;
+}
+
+.hidden {
+    opacity: 0;
+}
